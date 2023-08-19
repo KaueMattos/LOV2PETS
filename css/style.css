@@ -52,6 +52,7 @@ body {
 
 .logo1{
     display: flex;
+    width: 124px;
     align-items: center;
 }
 .logo2{
@@ -59,7 +60,7 @@ body {
 }
 
 .logo1 img{
-    width: 150px;
+    width: 100%;
     transition: 0.5s ease-in-out;
 }
 .logo1:hover img{
