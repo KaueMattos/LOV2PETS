@@ -88,11 +88,14 @@ body {
     color: #fff;
     font-weight: 400;
 }
-.nav-list li {
+.nav-list li a{
+    padding: 10px;
+    border-radius: 5px;
     transition: 0.6s ease-in-out;
 }
-.nav-list li:hover {
-    transform: scale(1.10);
+.nav-list li a:hover{  
+    color: #f00;
+    background-color: #ffffff;
 }
 .login-button-1{
     display: flex;
