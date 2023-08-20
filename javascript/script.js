@@ -114,9 +114,8 @@ function fecharMenu() {
     menuMobile.classList.remove('open');
     iconElement.src = "imagens/menu_white_36dp.svg";
 }
-
   // Adicionar eventos de clique aos elementos do menu
-  let menuItems = document.querySelectorAll('.nav-link');
-  menuItems.forEach(function(item) {
+  	let menuItems = document.querySelectorAll('.nav-link');
+	menuItems.forEach(function(item) {
 	item.addEventListener('click', fecharMenu);
 });
