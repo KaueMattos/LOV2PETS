@@ -128,14 +128,14 @@ body{
 }	 
     /* -------------------CARROSEL KAUE-------------------- */
 .produtos_recom{
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 210px;
     height: auto;
-    margin-top: 30px;
-}
-.produtos_recom p{
-    margin:0 0 10px 10px;
-
+    background-color: #FF8900;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin:30px 0 10px ;
 }
 #produtos_rec{
     display: grid;
