@@ -225,6 +225,27 @@ body{
     color: #303030;
     justify-content: flex-start;      
 }
+.swiper-slide:hover .conpreco{
+    display: none;
+}
+.swiper-slide:hover .comprar, .comprar:hover{
+    display: flex; 
+    cursor:pointer;      
+}
+.comprar{
+    display: none;
+    width: 100%;
+    height: auto;
+    font-family: 'Inter','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size:20px;
+    background-color:#f00;   
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0px 0px 5px 2px #2021243b;
+    justify-content: center;    
+}
 .espaco {
     display: flex;
     width: 80%;
