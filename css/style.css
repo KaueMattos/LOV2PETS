@@ -302,7 +302,7 @@ header {
     flex-wrap: nowrap;
     margin: 90px 0 90px;
   }
-  .container .card {
+.container .card {
     display: flex;
     position: relative; 
     justify-content: center;
@@ -314,11 +314,11 @@ header {
     border-radius: 20px;
     transition: 0.5s;  
   }
-  .container .card:hover {
+.container .card {
     height: 400px;
     cursor: pointer;
-  }
-  .container .card .img-box {
+}
+.container .card .img-box {
     position: absolute;
     top: 20px;
     width: 15vw;
@@ -327,21 +327,20 @@ header {
     box-shadow: 1px 1px 6px 1px #50505017;
     border-radius: 50%;
     overflow: hidden;
-    transition: 0.5s;
   }
-  .container .card:hover .img-box {
+.container .card .img-box {
     top: -6vw;
     scale: 0.75;
-  }
-  .container .card .img-box img {
+}
+.container .card .img-box img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .container .card .content {
+}
+.container .card .content {
     position: absolute;
     top: 18vw;
     width: 100%;
@@ -349,56 +348,22 @@ header {
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
-    transition: 0.5s;
-  }
-  .container .card:hover .content {
+}
+.container .card .content {
     top: 130px;
     height: 240px;
-  }
-  .container .card .content h2 {
+}
+.container .card .content h2 {
     font-size: 2.8vw;
     color: var(--clr);
-  }
-  .container .card .content p {
+}
+.container .card .content p {
     color: #333;
     margin-top: 3vw;
-  }
-  .container .card .content a:hover {
+}
+.container .card .content a:hover {
     opacity: 0.8;
-  }
-  
-  @media (max-width: 1000px){
-  .container{
-    flex-wrap: wrap; 
-  }
-  .container .card:hover {
-    height: 320px;   
-  }
-  .container .card{
-    width: 38vw;
-    height: 25vw
-  }
-  .container .card .content h2 {
-    font-size: 3vw;
-  }
-  .container .card .content p {
-    font-size: 2vw;
-  }
-  }
-
-  @media (max-width: 650px) {
-  .container .card {
-   
-          
-  }
-  .container .card .img-box {
-    
-         
-  }
-  .container .card .content p {
-    font-size: 0.8rem;
-  }  
-  }
+}
 
   /* CARROSEL AUTOMATICO */
 @-webkit-keyframes scroll {
@@ -573,42 +538,6 @@ header {
     padding: 5px;
     font-size: 12px;
 }
-      /*footer responsivo*/
-@media (max-width: 880px) {
-footer{ 
-    position: static;
-}
-.footer-container{padding: 10px;}
-.footer-container .footer-content-1,
-.footer-container .footer-content-2,
-.footer-container .footer-content-3{
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-.footer-container .footer-content-2 i{
-    margin-left: 0;
-    }
-.footer-container h3{
-    font-size: 20px;
-}
-hr{
-    margin:0 auto 0;
-    width: 70%;
-}
-}
-
-@media (max-width: 1047px) {
-.footer-container .footer-content-2 i{
-    margin-left: 0px;
-}         
-}
-
-@media (max-width: 360px) {
-.footer-container .footer-content-2{
-    text-align: left;
-}         
-}
 
 #btnTop{
     z-index: 9999;
@@ -642,7 +571,7 @@ hr{
     bottom: 90px;
 }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 .mobile-menu {
     max-height: 0;
     overflow: hidden;
@@ -726,7 +655,7 @@ hr{
 @media screen and (max-width: 640px){
 .swiper {      
     width: 100%;
-    height: 415px;
+    height: 436px;
 } 
 .swiper-slide{
     width: 100%;
@@ -786,4 +715,83 @@ hr{
 .box:nth-child(4){
     margin-top: 0px;
 }
+}
+@media (max-width: 1050px){
+.container{
+    flex-wrap: wrap; 
+}
+.container .card{
+    width: 38vw;
+    height: 35vw;
+}
+.container .card .content h2 {
+    font-size: 3vw;
+}
+.container .card .content {
+    top: 13vw;
+}
+.container .card .content p {
+    font-size: 2vw;
+}
+}
+  
+@media (max-width: 650px) {
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+.container .card .img-box{
+    top: -9vw;
+    scale: 0.75;
+}
+.container .card .img-box{
+    width: max(80px, 15vw);
+    height: max(80px, 15vw);
+}
+.container .card .content h2 {
+    font-size: max(25px, 3vw);
+}
+.container .card .content p {
+    font-size: max(15px, 1vw); 
+}
+.container .card {
+    width: max(301px , 80vw); 
+    height: max(197px , 35vw);   
+}
+}
+     /*footer responsivo*/
+@media (max-width: 880px) {
+footer{ 
+    position: static;
+}
+.footer-container{padding: 10px;}
+.footer-container .footer-content-1,
+.footer-container .footer-content-2,
+.footer-container .footer-content-3{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.footer-container .footer-content-2 i{
+    margin-left: 0;
+}
+.footer-container h3{
+    font-size: 20px;
+}
+hr{
+    margin:0 auto 0;
+    width: 70%;
+}
+}
+        
+@media (max-width: 1047px) {
+.footer-container .footer-content-2 i{
+    margin-left: 0px;
+}         
+}
+        
+@media (max-width: 360px) {
+.footer-container .footer-content-2{
+    text-align: left;
+}         
 }
