@@ -775,7 +775,7 @@ header {
     font-size: max(15px, 1vw); 
 }
 .container .card {
-    width: max(301px , 80vw); 
+    width: max(249px , 80vw); 
     height: max(197px , 35vw);   
 }
 }
