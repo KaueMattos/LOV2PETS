@@ -24,6 +24,9 @@ header {
     z-index: 998;
     top:0; 
 }
+#header-fixed{
+    position: relative;
+}
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +35,6 @@ header {
 .logo1{
     display: flex;
     width: 124px;
-    align-items: center;
 }
 .logo2{
     display:none;
@@ -143,6 +145,24 @@ header {
 }
 #servic__{
     scroll-margin-top: 128px;
+}
+#centroSobrenos{
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 30px;  
+}
+#sobreNos{
+    background-color: rgba(253, 11, 11, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 90%;
+    border-radius: 20px;
+}
+#sobreNos p{
+    margin-top: 20px;
+    text-align: start;
+    font-size: 3vh;
+    color: #000000eb;
 }
 .swiper {  
     width: 90%;
